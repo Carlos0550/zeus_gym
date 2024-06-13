@@ -1,0 +1,134 @@
+.section__user{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border: 1px solid white;
+    margin: 0 auto;
+    margin-top: 1em;
+    color: white;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.863);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 15.5px );
+    -webkit-backdrop-filter: blur( 15.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.section__memberships-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto; 
+    margin: 1em;
+    border: 1px solid black;
+    border-radius: 10px;  
+    background: #324052b8;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+
+
+.section__memberships{
+    width: 100%;
+    height: auto;
+}
+.ul__membership{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+}
+
+@media(max-width:768px){
+  .ul__membership{
+      width: 100%;
+      flex-direction: column;
+  }
+}
+
+.li__membership{
+    margin: 1em;
+    border-radius: 10px;
+    border: 3px solid white;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.55);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bar {
+    display: inline-block;
+    width: 3px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    animation: scale-up4 1s linear infinite;
+  }
+  
+  .bar:nth-child(2) {
+    height: 35px;
+    margin: 0 5px;
+    animation-delay: .25s;
+  }
+  
+  .bar:nth-child(3) {
+    animation-delay: .5s;
+  }
+  
+  @keyframes scale-up4 {
+    20% {
+      background-color: #ffff;
+      transform: scaleY(1.5);
+    }
+  
+    40% {
+      transform: scaleY(1);
+    }
+  }
+
+.btn__logout{
+    border: 3px solid white;
+    border-radius: 15px;
+    width: calc(10% - 1em);
+    padding: .4em;
+    margin: .5em;
+    background-color: rgb(255, 95, 95);
+    transition: all .3s ease-in-out;
+    font-size: 1em;
+    font-weight: bold;
+}
+.btn__logout:hover{
+    background-color: red;
+    color: white;
+    border: 3px solid black;
+    cursor: pointer;
+    transform: scale(1.04);
+    font-weight: bold;
+
+}
+.btn__logout:active{
+    transform: scale(.9);
+}
+
+
+
+@media(max-width: 900px){
+  .btn__logout{
+    width: min-content;
+  }
+}
+

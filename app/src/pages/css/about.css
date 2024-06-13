@@ -1,0 +1,85 @@
+.container__about{
+    width: 100%;
+    height: auto;
+   
+}
+.section__services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 100%;
+    height: auto;
+    background: #324052b8;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: 0;
+}
+
+.service__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: auto;
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.54);
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+@media (max-width:768px){
+    .section__services{
+        flex-direction: column;
+    }
+    .service__card{
+        width: 100%;
+        border: 1px solid white;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+}
+.title__card{
+    margin: 1em;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.ul__card{
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+    margin: 1em;
+}
+.li__card{
+    list-style:disc;
+}
+
+.btn__inscripcion{
+    border: 3px solid white;
+    border-radius: 15px;
+    width: 100%;
+    padding: .4em;
+    margin: .5em;
+    background-color: rgb(255, 95, 95);
+    transition: all .3s ease-in-out;
+    font-weight: bold;
+}
+.btn__inscripcion:hover{
+    background-color: red;
+    color: white;
+    border: 3px solid black;
+    cursor: pointer;
+    transform: scale(1.04);
+    font-weight: bold;
+
+}
+.btn__inscripcion:active{
+    transform: scale(.9);
+}
