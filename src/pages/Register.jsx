@@ -2,7 +2,6 @@ import React from 'react'
 import { FaInstagram, FaGithub,FaWhatsapp } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 
-import Swal from 'sweetalert2';
 import "./css/register.css"
 function Register() {
     
